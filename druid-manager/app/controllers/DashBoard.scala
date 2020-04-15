@@ -339,6 +339,7 @@ class DashBoard  @Inject() (ws:WSClient, druidCoordinator: String,
           }else{
             "undefined"
           }
+          Logger.info(s"Datasource : $datasource and ingested time value :${ingestedTime}")
           (datasource,ingestedTime)
         }
         )
